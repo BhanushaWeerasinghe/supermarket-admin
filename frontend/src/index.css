@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  nav,
+  aside {
+    display: none !important;
+  }
+}
